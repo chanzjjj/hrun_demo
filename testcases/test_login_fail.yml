@@ -1,0 +1,17 @@
+config:
+  name: 登录失败
+
+teststeps:
+-
+   name: 登录失败
+   api: api/login_base_url.yml
+   variables:
+     user: test1
+     psw: xxxxxxxxx
+   validate:
+     - eq:
+         - status_code
+         - 200
+     - eq:
+         - content.code
+         - 3003

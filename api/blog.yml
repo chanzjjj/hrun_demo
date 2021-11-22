@@ -1,0 +1,11 @@
+
+name: blog api
+base_url: https://www.cnblogs.com
+request:
+  verify: False
+  url: /yoyoketang/
+  method: GET
+validate:
+  - eq:
+      - status_code
+      - 200

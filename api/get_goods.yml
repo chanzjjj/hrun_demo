@@ -1,0 +1,16 @@
+
+name: 查询全部商品
+base_url: http://49.235.92.12:8201
+request:
+  url: /api/v1/goods
+  method: GET
+  params:
+    page: 1
+    size: 5
+validate:
+  - eq:
+      - status_code
+      - 200
+  - eq:
+      - content.code
+      - 0

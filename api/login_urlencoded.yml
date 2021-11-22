@@ -1,0 +1,16 @@
+
+name: 登录v4
+base_url: http://49.235.92.12:8201
+request:
+  url: /api/v4/login
+  method: POST
+  data:
+    username: test
+    password: "123456"
+validate:
+  - eq:
+      - status_code
+      - 200
+  - eq:
+      - content.code
+      - 0

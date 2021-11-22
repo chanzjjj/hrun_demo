@@ -1,0 +1,24 @@
+
+name: 用户账号登录
+variables:
+  user: test1
+  psw: "123456"
+request:
+  url: http://49.235.92.12:8201/api/v1/login
+  method: POST
+  json:
+    username: $user
+    password: $psw
+validate:
+    - eq:
+        - status_code
+        - 200
+    - eq:
+        - headers.Content-Type
+        - application/json
+    - eq:
+        - content.code
+        - 0
+    - len_eq:
+        - content.token
+        - 40

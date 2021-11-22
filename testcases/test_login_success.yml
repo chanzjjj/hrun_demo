@@ -1,0 +1,22 @@
+
+config:
+  name: 登录成功
+
+teststeps:
+-
+  name: 测试步骤：登录
+  api: api/login_base_url.yml
+  validate:
+    - eq:
+        - status_code
+        - 200
+    - eq:
+        - content.code
+        - 0
+    - eq:
+        - content.msg
+        - login success!
+    - len_eq:
+        - content.token
+        - 40
+

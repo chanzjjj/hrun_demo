@@ -1,0 +1,19 @@
+
+name: test demo
+request:
+  url: http://49.235.92.12:8201/api/test/demo
+  method: GET
+validate:
+  - eq:
+      - content.code
+      - 0
+  - eq:
+      - content.msg
+      - 成功success!
+  - eq:
+      - content.data.0.mail
+      - 283340479@qq.com
+  - eq:
+      - content.data.1.name
+      - yoyo111
+
