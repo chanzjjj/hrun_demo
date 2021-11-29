@@ -1,0 +1,22 @@
+name: 修改个人信息
+base_url: http://49.235.92.12:8201
+variables:
+  token: 7e9b46a0e1f2146d641ad7fd3f160c7e581da607
+  name: test
+  sex: M
+  age: 20
+  mail: 283340479@qq.com
+request:
+  url: /api/v1/userinfo
+  method: POST
+  headers:
+    Authorization: Token $token
+  json:
+    name: $name
+    sex: $sex
+    age: $age
+    mail: $mail
+validate:
+  - eq:
+      - status_code
+      - 200

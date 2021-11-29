@@ -1,0 +1,20 @@
+name: 查询全部商品
+base_url: http://49.235.92.12:8201
+variables:
+  page: 1
+  size: 3
+request:
+  url: api/v2/goods
+  method: GET
+  headers:
+    Authorization: Token $token
+  params:
+    page: $page
+    size: $size
+validate:
+  - eq:
+      - status_code
+      - 200
+  - eq:
+      - headers.Content-Type
+      - application/json

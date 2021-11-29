@@ -1,0 +1,31 @@
+config:
+  name: 用例集-登录用例集
+
+testcases:
+-
+  name: 1.登录接口，输入正常的账号密码，登录成功
+  testcase: testcases/test_login_success.yml
+  variables:
+    user: test
+    psw: "123456"
+
+-
+  name: 2.登录接口，输入未注册的账号，登录失败
+  testcase: testcases/test_login_fail.yml
+  variables:
+    user: test_xxx_1
+    psw: "123456"
+
+-
+  name: 3.登录接口，已注册的账号，密码错误，登录失败
+  testcase: testcases/test_login_fail.yml
+  variables:
+    user: test
+    psw: "123456x"
+
+-
+  name: 4.登录接口，账号密码为空，登录失败
+  testcase: testcases/test_login_fail.yml
+  variables:
+    user:
+    psw:

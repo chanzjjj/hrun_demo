@@ -1,0 +1,21 @@
+config:
+  name: 用例名称-登录后查询全部商品
+  output:
+    - token
+
+teststeps:
+-
+  name: 步骤1-登录
+  api: api/login.yml
+  extract:
+    token: content.token
+-
+  name: 步骤2-查询全部商品
+  api: api/get_all_goods.yml
+  validate:
+    - eq:
+        - content.code
+        - 0
+    - eq:
+        - content.msg
+        - success!

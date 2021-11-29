@@ -1,0 +1,21 @@
+config:
+  name: 用例描述-登录
+  variables:
+    user: test2
+    psw: "123456"
+  base_url: http://49.235.92.12:7005  #以api的base_url为主
+
+teststeps:
+-
+  name: 步骤名称-登录
+  api: api/login.yml
+  validate:
+    - eq:
+        - content.code
+        - 0
+    - eq:
+        - content.msg
+        - login success!
+    - len_eq:
+        - content.token
+        - 40

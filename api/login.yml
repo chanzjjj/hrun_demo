@@ -17,3 +17,9 @@ validate:
     - eq:
         - headers.Content-Type
         - application/json
+    - eq:
+        - content.code
+        - 0
+    - len_eq:
+        - content.token
+        - 40

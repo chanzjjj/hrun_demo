@@ -1,0 +1,13 @@
+config:
+  name: 用例集-登录用例集
+
+testcases:
+-
+  name: 1.登录接口，输入正确账号密码，登录成功
+  testcase: testcases/test_login_success.yml
+  parameters:
+    user-psw:
+      - [test1, "123456"]
+      - [test2, "123456"]
+      - [test3, "123456"]
+      - [test4, "123456"]

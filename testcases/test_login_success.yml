@@ -1,11 +1,15 @@
 
 config:
   name: 登录成功
+  output:
+    - token
 
 teststeps:
 -
   name: 测试步骤：登录
   api: api/login_base_url.yml
+  extract:
+    token: content.token
   validate:
     - eq:
         - status_code

@@ -1,0 +1,41 @@
+config:
+  name: 修改信息-修改自己的个人信息-修改成功
+  variables:
+    user: test1
+
+teststeps:
+-
+  name: step1-login get token
+  api: api/login.yml
+  variables:
+    psw: "123456"
+  extract:
+    get_token: content.token
+  validate:
+    - eq:
+        - content.code
+        - 0
+    - eq:
+        - content.msg
+        - login success!
+    - len_eq:
+        - content.token
+        - 40
+-
+  name: step2-update userinfo
+  api: api/userinfo.yml
+  variables:
+    token: $get_token
+    name: $user
+    mail: 123@qq.com
+  validate:
+    - eq:
+        - content.code
+        - 0
+    - eq:
+        - content.message
+        - update some data!
+    - eq:
+        - content.data.mail
+        - 123@qq.com
+
