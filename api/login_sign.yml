@@ -1,0 +1,17 @@
+name: 用户账号登录
+base_url: http://49.235.92.12:8201
+variables:
+  user: test1
+  psw: "123456"
+request:
+  url: /api/v3/login
+  method: POST
+  json:
+    username: $user
+    password: $psw
+validate:
+    - eq:
+        - status_code
+        - 200
+setup_hooks:
+  - ${setup_request($request)}

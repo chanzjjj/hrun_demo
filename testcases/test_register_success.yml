@@ -1,0 +1,19 @@
+
+config:
+  name: 注册
+
+teststeps:
+-
+  name: 测试步骤：注册成功
+  api: api/register.yml
+  variables:
+    user: ${register_user()}
+    psw: 123456
+  validate:
+    - eq:
+        - content.code
+        - 0
+    - eq:
+        - content.msg
+        - register success!
+

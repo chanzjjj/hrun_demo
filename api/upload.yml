@@ -1,0 +1,12 @@
+name: 文件上传
+base_url: ${ENV(base_url)}
+request:
+  url: /api/v1/upfile/
+  method: POST
+  upload:
+    file: data/hrun.jpg
+    title: 上海-悠悠
+validate:
+  - eq:
+      - status_code
+      - 200

@@ -1,0 +1,16 @@
+config:
+  name: demo 用例
+  setup_hooks:
+    - ${hook_up()}
+    - ${hook_up2()}
+  teardown_hooks:
+    - ${hook_teardown()}
+
+teststeps:
+-
+  name: 步骤demo
+  api: api/demo_hooks.yml
+
+-
+  name: 步骤demo2
+  api: api/demo_hooks.yml

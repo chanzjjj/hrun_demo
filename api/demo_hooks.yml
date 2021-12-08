@@ -1,0 +1,9 @@
+name: test demo api
+base_url: ${ENV(base_url)}
+request:
+  url: /api/test/demo
+  method: GET
+validate:
+  - eq:
+      - status_code
+      - 200

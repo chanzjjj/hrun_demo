@@ -1,29 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92aecdec-0870-436a-a100-56cf5a6a3d02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/get_all_goods.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/login.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/login_env.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/userinfo.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/user_password.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/test_all_goods.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/test_login_base_url.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/test_login_goods.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcases/test_update_userinfo.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testsuites/testsuite_login.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testsuites/testsuite_login_params.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testsuites/testsuite_params.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testsuites/testsuite_params_csv.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testsuites/testsuite_params_func.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testsuites/testsuite_user_params.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="92aecdec-0870-436a-a100-56cf5a6a3d02" name="Default Changelist" comment="更新代码">
+      <change afterPath="$PROJECT_DIR$/api/demo_hooks.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/login_sign.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/register.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/upload.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/hrun.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/test_demo_hooks.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcases/test_register_success.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/login_base_url.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/login_base_url.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debugtalk.py" beforeDir="false" afterPath="$PROJECT_DIR$/debugtalk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_login_fail.yml" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_login_fail.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_login_success.yml" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_login_success.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +18,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -96,9 +89,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python_practice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python_files\hrun_demo\data" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\python project\hrun_demo\testcases" />
     </key>
@@ -143,6 +139,21 @@
       <option name="presentableId" value="Default" />
       <updated>1637394198936</updated>
     </task>
+    <task id="LOCAL-00001" summary="更新代码">
+      <created>1638179128775</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638179128775</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更新代码">
+      <created>1638180030408</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638180030408</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -178,6 +189,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新代码" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/api/demo_api.yml">
